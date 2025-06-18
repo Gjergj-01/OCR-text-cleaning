@@ -1,0 +1,34 @@
+### model
+model_name_or_path: path_of_model #no hf_id but the absolute path, save it in a specific directory
+new_special_tokens: <|start_header_id|>,<end_header_id|>,<|eot_id|> #token added with the chat template
+
+### method
+stage: sft
+do_train: false
+finetuning_type: full
+flash_attn: fa2
+deepspeed: examples/deepspeed/ds_z3_config.json #deepspeed
+
+### dataset
+dataset: evaluation_dataset # comma separated datasets, defined in: data/dataset_info.json
+template: llama3 # chat template
+cutoff_len: 2048
+overwrite_cache: false
+preprocessing_num_workers: 16
+
+### output
+output_dir: /path/to/output # output directory
+logging_steps: 10
+save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+
+### eval
+val_size: 1.0
+per_device_eval_batch_size: 4
+eval_strategy: no
+eval_steps: 0
+
+### logging
+report_to: wandb
+run_name: evaluation_cineca # the name of the run
