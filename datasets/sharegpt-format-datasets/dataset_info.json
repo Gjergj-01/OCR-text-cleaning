@@ -1,11 +1,11 @@
 {
   "training_dataset": {
-    "path": "sharegpt-format-datasets/training_dataset.json",
+    "path": "$SCRATCH/ocr_cleaning/data/training_dataset.json",
     "type": "chat" 
   },
 
   "evaluation_dataset":{
-    "path": "sharegpt-format-datasets/test_dataset.json",
+    "path": "$SCRATCH/ocr_cleaning/data/evaluation_dataset.json",
     "type": "chat"
   }
 }
