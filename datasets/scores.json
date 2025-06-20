@@ -1,0 +1,26 @@
+{
+    "human": [
+        2,
+        3
+    ],
+    "score_rouge1": [
+        2,
+        4
+    ],
+    "score_rouge2": [
+        2,
+        4
+    ],
+    "score_rougeL": [
+        2,
+        4
+    ],
+    "cohen_rouge1": 0.33333333333333337,
+    "cohen_rouge2": 0.33333333333333337,
+    "cohen_rougeL": 0.33333333333333337,
+    "cohen_llm": 0.0,
+    "score_llm": [
+        1,
+        5
+    ]
+}
